@@ -3,7 +3,7 @@ library(quanteda)
 library(topicmodels)
 
 # Load the CSV file
-data <- read.csv("train_no_empty_rows.csv")
+data <- read.csv("train_data_with_sentiments.csv")
 
 # Create a corpus from the text column
 corp <- corpus(data$text)
@@ -22,9 +22,9 @@ set.seed(1)
 
 # Perform Latent Dirichlet Allocation (LDA) for topic modeling
 m <- LDA(dtm, method = "Gibbs", k = 10, control = list(alpha = 0.1))
-
 # View the LDA model
+m2 <- LDA(dtm, method = "VEM", k = 10)
 print(m)
-
+terms(m2, 5)
 # View the top terms for each topic
 terms(m, 5)

@@ -1,0 +1,17 @@
+A LDA_Gibbs topic model with 10 topics.
+A LDA_Gibbs topic model with 10 topics.
+[1] "for benign data\n"
+     Topic 1 Topic 2 Topic 3     Topic 4  Topic 5   Topic 6  Topic 7 Topic 8  Topic 9 Topic 10
+[1,] "#mkr"  "$"     "trump"     "people" "gab"     "us"     "rt"    "white"  "like"  "god"   
+[2,] "kat"   "time"  "#maga"     "white"  "twitter" "trump"  "😂"    "black"  "just"  "good"  
+[3,] "like"  "years" "#gifwar"   "like"   "just"    "people" "trash" "people" "get"   "love"  
+[4,] "amp"   "new"   "president" "jews"   "people"  "can"    "#8230" "women"  "one"   "thank" 
+[5,] "andre" "2"     "#trump"    "just"   "can"     "get"    "u"     "police" "know"  "day"   
+[1] "\n\n"
+[1] "for troll data\n"
+     Topic 1    Topic 2 Topic 3    Topic 4  Topic 5  Topic 6   Topic 7  Topic 8   Topic 9    Topic 10
+[1,] "retarded" "cunt"  "faggot"   "nigger" "faggot" "trump"   "white"  "nigger"  "cunt"     "sexist"
+[2,] "jew"      "#mkr"  "retarded" "white"  "shit"   "#maga"   "people" "faggot"  "retarded" "women" 
+[3,] "jews"     "kat"   "like"     "one"    "ass"    "us"      "jews"   "white"   "faggot"   "rt"    
+[4,] "racist"   "just"  "just"     "like"   "fuck"   "people"  "us"     "fuck"    "trump"    "just"  
+[5,] "just"     "fuck"  "retard"   "just"   "like"   "illegal" "nigger" "fucking" "like"     "men"   

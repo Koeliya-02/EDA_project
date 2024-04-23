@@ -1,0 +1,17 @@
+A LDA_Gibbs topic model with 5 topics.
+A LDA_Gibbs topic model with 5 topics.
+[1] "for benign data\n"
+     Topic 1 Topic 2  Topic 3     Topic 4   Topic 5 
+[1,] "#mkr"  "people" "trump"     "gab"     "people"
+[2,] "rt"    "get"    "#maga"     "just"    "like"  
+[3,] "like"  "just"   "police"    "twitter" "just"  
+[4,] "just"  "trump"  "new"       "can"     "white" 
+[5,] "amp"   "us"     "president" "like"    "can"   
+[1] "\n\n"
+[1] "for troll data\n"
+     Topic 1    Topic 2  Topic 3    Topic 4   Topic 5 
+[1,] "retarded" "white"  "cunt"     "nigger"  "rt"    
+[2,] "jews"     "nigger" "nigger"   "faggot"  "sexist"
+[3,] "jew"      "people" "faggot"   "cunt"    "#mkr"  
+[4,] "like"     "jews"   "like"     "fuck"    "women" 
+[5,] "just"     "us"     "retarded" "fucking" "just"  

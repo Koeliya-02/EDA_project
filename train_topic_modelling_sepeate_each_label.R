@@ -1,3 +1,4 @@
+sink("logfile_lda_k_10_alpha_0_2.txt",append=TRUE)
 library(quanteda)
 library(topicmodels)
 
@@ -17,7 +18,7 @@ perform_topic_modeling <- function(data_subset) {
   set.seed(1)
   
   # Perform LDA topic modeling
-  m <- LDA(dtm, method = "Gibbs", k = 10, control = list(alpha = 0.1))
+  m <- LDA(dtm, method = "Gibbs", k = 10, control = list(alpha = 0.2))
   
   # Return the model
   return(m)
@@ -34,21 +35,26 @@ print(model_label_0)
 print(model_label_1)
 
 # Get the top terms for each topic for data_label_0
+print("for benign data\n")
 terms(model_label_0, 5)
-
+print("\n\n")
+print("for troll data\n")
 # Get the top terms for each topic for data_label_1
 terms(model_label_1, 5)
 
-topic = 6
-words_label_0 = posterior(model_label_0)$terms[topic, ]
-topwords_label_0 = head(sort(words_label_0, decreasing = T), n=50)
-head(topwords_label_0)
+#topic = 6
+#words_label_0 = posterior(model_label_0)$terms[topic, ]
+#topwords_label_0 = head(sort(words_label_0, decreasing = T), n=50)
+#head(topwords_label_0)
 
-topic = 6
-words_label_1 = posterior(model_label_1)$terms[topic, ]
-topwords_label_1 = head(sort(words_label_1, decreasing = T), n=50)
-head(topwords_label_1)
+#topic = 6
+#words_label_1 = posterior(model_label_1)$terms[topic, ]
+#topwords_label_1 = head(sort(words_label_1, decreasing = T), n=50)
+#head(topwords_label_1)
 
-library(wordcloud)
-wordcloud(names(topwords_label_0), topwords)
-wordcloud(names(topwords_label_1), topwords)
+#library(wordcloud)
+#wordcloud(names(topwords_label_0), topwords)
+#wordcloud(names(topwords_label_1), topwords)
+
+sink()
+
